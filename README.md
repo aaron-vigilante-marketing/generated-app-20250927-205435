@@ -1,6 +1,6 @@
 # Rhythm-808: Retro Web Drum Machine
 
-[cloudflarebutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/aaron-vigilante-marketing/generated-app-20250927-205435)
 
 A visually striking, retro-themed clone of the Roland TR-808 drum machine with a 16-step sequencer, built for the modern web.
 
@@ -91,7 +91,7 @@ This will build the application and deploy it to your Cloudflare account.
 
 Alternatively, you can deploy this repository directly to Cloudflare.
 
-[cloudflarebutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/aaron-vigilante-marketing/generated-app-20250927-205435)
 
 ## License
 
