@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=JetBrains+Mono:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 180 100% 50%;
+    --radius: 0.5rem;
+  }
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-dark-charcoal text-foreground;
+    background-image: radial-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 10px 10px;
+  }
+}
+@layer utilities {
+  .crt-container {
+    @apply relative overflow-hidden;
+  }
+  .crt-container::before {
+    content: '';
+    @apply absolute inset-0 pointer-events-none z-10;
+    background: repeating-linear-gradient(to bottom, rgba(0,0,0,0.4) 0px, rgba(0,0,0,0.4) 1px, transparent 1px, transparent 2px);
+    animation: scanline 10s linear infinite;
+  }
+  .crt-container::after {
+    content: '';
+    @apply absolute inset-0 pointer-events-none z-20 opacity-20;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABOSURBVFhH7c5BDQAwEASh+je9N2gD42gC3be3AAAAAADYcT0iQASIgBAgAkSACBABIkAEiAARIAJEgAgQASJABIgA2bYDAAAAAADg1gALaAABf801WgAAAABJRU5ErkJggg==');
+    animation: grain 0.4s steps(1) infinite;
+  }
+}
